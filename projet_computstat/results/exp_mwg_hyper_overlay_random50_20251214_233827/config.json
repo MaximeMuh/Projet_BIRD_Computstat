@@ -1,0 +1,36 @@
+{
+  "mask_kind": "random50",
+  "missing_rate": 0.5,
+  "base": {
+    "n_iters": 16000,
+    "burn_in": 2000,
+    "thinning": 20,
+    "eval_every": 100,
+    "warmup_pg": 50
+  },
+  "sweep_warmup": [
+    0,
+    10,
+    50,
+    100
+  ],
+  "sweep_burn_in": [
+    0,
+    500,
+    2000,
+    5000
+  ],
+  "sweep_thinning": [
+    1,
+    5,
+    10,
+    20,
+    50
+  ],
+  "mwg": {
+    "use_adaptive_accept": false,
+    "target_accept": 0.15,
+    "adapt_lr": 0.005,
+    "freeze_adapt_after_burnin": true
+  }
+}

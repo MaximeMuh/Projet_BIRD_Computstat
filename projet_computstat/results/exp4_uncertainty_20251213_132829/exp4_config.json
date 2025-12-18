@@ -1,0 +1,11 @@
+{
+  "mask_kind": "top",
+  "missing_rate": 0.5,
+  "method": "mwg",
+  "n_iters": 20000,
+  "burn_in": 5000,
+  "thinning": 50,
+  "warmup_pg": 50,
+  "proposal_scale": 1.0,
+  "idx": 0
+}

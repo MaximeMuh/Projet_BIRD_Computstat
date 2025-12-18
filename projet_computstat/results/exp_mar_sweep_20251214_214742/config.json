@@ -1,0 +1,25 @@
+{
+  "p_list": [
+    0.4,
+    0.6,
+    0.8,
+    0.9
+  ],
+  "best_alpha": 0,
+  "best_sigma": 0.15,
+  "n_iters": 16000,
+  "burn_in": 2000,
+  "thinning": 20,
+  "eval_every": 100,
+  "warmup_pg": 50,
+  "use_adaptive_accept": false,
+  "target_accept": 0.15,
+  "adapt_lr": 0.005,
+  "freeze_adapt_after_burnin": true,
+  "idxs_show": [
+    0,
+    1,
+    2,
+    5
+  ]
+}

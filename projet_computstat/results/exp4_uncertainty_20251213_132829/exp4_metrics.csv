@@ -1,0 +1,2 @@
+mask_kind,missing_rate,method,S,var_missing_mean,entropy_missing_mean
+top,0.5,mwg,300,0.011590022593736649,0.0655374750494957

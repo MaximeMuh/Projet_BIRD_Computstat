@@ -1,0 +1,28 @@
+{
+  "scenarios": [
+    "top",
+    "bottom",
+    "center",
+    "random50"
+  ],
+  "n_iters": 16000,
+  "burn_in": 2000,
+  "sample_every": 200,
+  "warmup_pg": 50,
+  "classic": {
+    "adaptive": false,
+    "target_accept": 0.23,
+    "adapt_lr": 0.005,
+    "freeze": true
+  },
+  "mixture": {
+    "alpha": 0.5,
+    "rw_sigma": 0.15
+  },
+  "viz_idxs": [
+    0,
+    1,
+    2
+  ],
+  "n_show_samples": 8
+}

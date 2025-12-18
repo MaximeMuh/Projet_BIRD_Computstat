@@ -1,0 +1,31 @@
+{
+  "scenarios": [
+    "top",
+    "bottom",
+    "center",
+    "random50"
+  ],
+  "n_random_repeats": 5,
+  "base_seed": 123,
+  "n_iters": 12000,
+  "burn_in": 2000,
+  "thinning": 20,
+  "eval_every": 200,
+  "warmup_pg": 50,
+  "alpha_list": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "sigma_list": [
+    0.05,
+    0.1,
+    0.15,
+    0.25,
+    0.5
+  ],
+  "acc_min": 0.05,
+  "acc_max": 0.5
+}

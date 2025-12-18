@@ -1,0 +1,21 @@
+{
+  "best_alpha": 0,
+  "best_sigma": 0.15,
+  "scenarios": [
+    "top",
+    "random50",
+    "bottom",
+    "center"
+  ],
+  "n_iters": 16000,
+  "burn_in": 2000,
+  "thinning": 20,
+  "eval_every": 100,
+  "warmup_pg": 50,
+  "use_multichain": false,
+  "n_chains": 5,
+  "use_adaptive_accept": false,
+  "target_accept": 0.23,
+  "adapt_lr": 0.005,
+  "freeze_adapt_after_burnin": true
+}
