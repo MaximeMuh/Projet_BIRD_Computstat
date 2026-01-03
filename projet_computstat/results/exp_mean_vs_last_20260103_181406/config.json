@@ -1,0 +1,21 @@
+{
+  "scenarios": [
+    "top",
+    "MAR80",
+    "bottom",
+    "center"
+  ],
+  "p_missing_random": 0.5,
+  "n_iters": 12000,
+  "burn_in": 2000,
+  "thinning": 20,
+  "warmup_pg": 50,
+  "proposal_scale": 1.0,
+  "adaptive_mwg": false,
+  "idxs_show": [
+    0,
+    1,
+    2,
+    5
+  ]
+}

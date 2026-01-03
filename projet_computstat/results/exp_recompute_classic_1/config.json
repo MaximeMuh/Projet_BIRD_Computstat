@@ -1,9 +1,6 @@
 {
   "scenarios": [
-    "top",
-    "random50",
-    "bottom",
-    "center"
+    "MAR80"
   ],
   "n_iters": 16000,
   "burn_in": 2000,

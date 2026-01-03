@@ -3,7 +3,7 @@
   "best_sigma": 0.15,
   "scenarios": [
     "top",
-    "random50",
+    "MAR80",
     "bottom",
     "center"
   ],

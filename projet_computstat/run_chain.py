@@ -252,9 +252,14 @@ def run_chain_mean_last(model, x_true, x_init, mask_obs, *,
         last_sample_bin = x.detach().cpu()
 
     mean_impute = (sum_mean / max(n_kept, 1)).detach().cpu()
+    # Moyenne postérieure continue
+    mean_impute = (mean_impute > 0.5).float()
+
+    f1_mean = f1_missing(x_true, mean_impute.to(device), mask_obs)
+
 
     # On calcule les F1 sur la partie manquante, une fois pour la moyenne, une fois pour le dernier sample.
-    f1_mean = f1_missing(x_true, mean_impute.to(device), mask_obs)
+    #f1_mean = f1_missing(x_true, mean_impute.to(device), mask_obs)
     f1_last = f1_missing(x_true, last_sample_bin.to(device), mask_obs)
 
     logp_mc = float((logS - math.log(max(n_kept, 1))).mean().item()) if logS is not None else float("nan")
